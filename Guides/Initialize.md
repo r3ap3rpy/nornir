@@ -1,4 +1,4 @@
-### Initialize project.
+## Initialize project.
 
 There are three ways to setup the project.
 

@@ -37,6 +37,6 @@ source nornir/bin/activate
 pip install nornir
 ```
 
-Now nornir is installed, the next section will give you a quick tour about basic layout of the project and how you can [Initialize](../Initialize) your project files.
+Now nornir is installed, the next section will give you a quick tour about basic layout of the project and how you can [Initialize](/Initialize) your project files.
 
 
