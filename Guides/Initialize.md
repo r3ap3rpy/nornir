@@ -34,6 +34,8 @@ nr = InitNornir(
 )
 ```
 
+When you create your `nr` object with the `dry_run=True` argument, it will just simulate the changes, and wont apply them.
+
 ### Combination
 
 Depending on your current situation it can come in handy when you combine the two concepts above.
