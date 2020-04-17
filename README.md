@@ -1,6 +1,5 @@
 ### Welcome to my repo on nornir.
 
-![Logo](https://nornir.readthedocs.io/en/latest/_images/nornir_logo_02.jpg)
 
 It's an ansible alternative, which is pure python.
 
@@ -10,3 +9,4 @@ Under the [Guides](/Guides) you will find markdown files covering distinc topics
 
 This reporitory is a learning material for my corresponding [course]() aswell.
 
+![Logo](https://nornir.readthedocs.io/en/latest/_images/nornir_logo_02.jpg)
