@@ -14,3 +14,29 @@ On the host machine I install the *virtualenv* module in python with the followi
 python -m pip install virtualenv
 ```
 
+If you have multiple versions of python make sure your default `python` is the version 3.7, otherwise you need to give the full path for the command to work.
+
+After this you can create your little environment where the setup will live.
+
+Mine lives on the Desktop\NornirProject folder of my user, so after navigating there the following command is issued.
+
+``` python
+virtualenv nornirproject
+```
+
+Once this is done we will need 2 more folders, one is `scripts` the other is `inventory`.
+
+You can now activate your project and install nornir.
+
+``` bash
+# This is for windows
+nornirproject\Scripts\activate.bat
+# This is for linux
+source nornir/bin/activate
+# install nornir
+pip install nornir
+```
+
+Now nornir is installed, the next section will give you a quick tour about basic layout of the project and how you can [Initialize](../Initialize) your project files.
+
+
