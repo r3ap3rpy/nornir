@@ -2,9 +2,9 @@
 
 You can pick Windows, Linux or MacOS host to setup your nornir instance.
 This guide assumes a version 3.7 installation of [Python](https://www.python.org/downloads/release/python-370/) and at least 1 virtual machine that will be managed.
-One virtual machine should be a Linux. I am going to use in the course a [CentOS7](https://www.centos.org/download/).
+One virtual machine should be a Linux. I am going to use in the course a [CentOS7](https://www.centos.org/download/), for the network demonstration GNS3 will be used with two cisco IOS routers.
 
-The machines can have as low as 2vCPU and 2GB of ram.
+The machine can have as low as 2vCPU and 2GB of ram.
 
 ### Installing nornir
 

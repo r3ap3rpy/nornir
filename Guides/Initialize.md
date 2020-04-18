@@ -61,7 +61,7 @@ host1.dc1:
     groups:
         - dc1
     data:
-        site: cmh
+        site: home
         role: host
         type: host
 ```
@@ -77,7 +77,7 @@ global:
         company: r3ap3rpy
 dc1:
     data:
-        location: fransfurt
+        location: frankfurt
 ```
 
 ### defaults.yaml

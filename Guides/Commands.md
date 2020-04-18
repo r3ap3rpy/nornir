@@ -11,9 +11,9 @@ from nornir.plugins.functions.text import print_result
 
 nr = InitNornir(core={"num_workers": 50}, config_file="config.yaml")
 
-cmh_hosts = nr.filter(site="cmh", role="host")
+hosts = nr.filter(site="home", role="host")
 
-result = cmh_hosts.run(task=commands.remote_command,command="df -h", name = "Available space")
+result = hosts.run(task=commands.remote_command,command="df -h", name = "Available space")
 
 print_result(result, vars=["stdout"])
 ```
@@ -27,9 +27,9 @@ from nornir.plugins.functions.text import print_result
 
 nr = InitNornir(core={"num_workers": 50}, config_file="config.yaml")
 
-cmh_hosts = nr.filter(site="cmh", role="host")
+hosts = nr.filter(site="home", role="host")
 
-result = cmh_hosts.run(task=files.sftp, name = "Upload file", action="put",src="LICENSE.txt",dst="/tmp/LICENSE.txt")
+result = hosts.run(task=files.sftp, name = "Upload file", action="put",src="LICENSE.txt",dst="/tmp/LICENSE.txt")
 
 print_result(result)
 ```
@@ -43,9 +43,9 @@ from nornir.plugins.functions.text import print_result
 
 nr = InitNornir(core={"num_workers": 50}, config_file="config.yaml")
 
-cmh_hosts = nr.filter(site="cmh", role="host")
+hosts = nr.filter(site="home", role="host")
 
-result = cmh_hosts.run(task=files.write_file, name = "Upload file", filename="LICENSE.txt", content="Iamyournewcontent",)
+result = hosts.run(task=files.write_file, name = "Upload file", filename="LICENSE.txt", content="Iamyournewcontent",)
 
 print_result(result)
 ```
@@ -67,7 +67,9 @@ def available_resources(task):
              name="Available memory",
              command="free -m")
 
-result = cmh_hosts.run(task=available_resources)
+hosts = nr.filter(site="home", role="host")
+
+result = hosts.run(task=available_resources)
 
 print_result(result, vars=["stdout"])
 ```
