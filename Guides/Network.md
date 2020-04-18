@@ -38,7 +38,7 @@ ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes256-cbc nornir@192.168.220
 Let's add the routers into our hosts file.
 
 ``` yaml
-host2.cmh:
+host2.home:
     hostname: 192.168.220.10
     port: 22
     username: nornir
@@ -59,7 +59,7 @@ host2.cmh:
           extras:
               secret: nornir
 
-host2.cmh:
+host2.home:
     hostname: 192.168.220.11
     port: 22
     username: nornir
