@@ -53,7 +53,7 @@ THe data section comes in handy when you are filtering your hosts.
 ``` yaml
 ---
 host1.dc1:
-    hostname: 192.168.0.150
+    hostname: centosa
     port: 22
     username: nornir
     password: nornir

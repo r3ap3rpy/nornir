@@ -1,0 +1,10 @@
+from nornir import InitNornir
+
+nr = InitNornir(core = {'num_workers': 20}, 
+inventroy = {
+        "plugin" : "nornir.plugins.inventory.SimpleInventory",
+        "options" : {
+                "host_file" : "inventory/hosts.yaml",
+                "group_file" : "inventory/groups.yaml",
+                "default_file" : "inventory/defaults.yaml"
+        }

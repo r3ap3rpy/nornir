@@ -1,0 +1,2 @@
+from nornir import InitNornir
+nr = InitNornir(core ={"num_workers":20},config_file = "config.yaml" )

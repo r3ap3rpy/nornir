@@ -23,14 +23,14 @@ ip ssh version 2
 
 
 int fa0/0
-ip address 192.168.220.10/11 255.255.255.0
+ip address 192.168.56.100/111 255.255.255.0
 no shut
 ```
 
 Now you should be able to test the ssh connnection. You may have a situation that you need to add extra arguments for the ssh connection to work.
 
 ``` bash
-ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes256-cbc nornir@192.168.220.10
+ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 -c aes256-cbc nornir@192.168.56.100
 ```
 
 ### Add them to hosts file
